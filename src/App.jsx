@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import {
     BrowserRouter as Router,
-    Routes,
+    Routes, 
     Route,
 } from "react-router-dom";
 import './App.css'
@@ -12,11 +12,11 @@ import Background from './Background';
 
 function App() {
   return (
-    <Router>
+    <Router basename={`/${process.env.PUBLIC_URL}`}>
       <Background />
       < Nav />
       <Routes>
-        <Route path='/' element={<Resume/>}/>
+        <Route path='' element={<Resume/>}/>
         <Route path='/Resume' element={<Resume/>}/>
         <Route path='/Employment' element={<Employment/>}/>
       </Routes>
