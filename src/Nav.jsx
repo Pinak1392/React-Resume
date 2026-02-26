@@ -1,6 +1,3 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 
 function Nav() {
@@ -8,10 +5,10 @@ function Nav() {
     <nav>
       <h1>Pinak Limaye</h1>
       <ul>
-        <li className='NavLi'><a href='/Resume'>Resume</a></li>
-        <li className='NavLi'><a href='/Employment'>Employment</a></li>
-        <li className='NavLi'><a href='/Education'>Education</a></li>
-        <li className='NavLi'><a href='/Skills  '>Skills</a></li>
+        <li className='NavLi'><a href='./Resume'>Resume</a></li>
+        <li className='NavLi'><a href='./Employment'>Employment</a></li>
+        <li className='NavLi'><a href='./Education'>Education</a></li>
+        <li className='NavLi'><a href='./Skills  '>Skills</a></li>
       </ul>
     </nav>
   )
