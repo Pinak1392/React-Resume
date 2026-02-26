@@ -12,7 +12,7 @@ import Background from './Background';
 
 function App() {
   return (
-    <Router>
+    <Router basename='/React-Resume/'>
       <Background />
       < Nav />
       <Routes>
