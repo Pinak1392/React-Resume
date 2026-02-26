@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import './App.css'
 
 function Nav() {
@@ -5,10 +6,10 @@ function Nav() {
     <nav>
       <h1>Pinak Limaye</h1>
       <ul>
-        <li className='NavLi'><a href='./Resume'>Resume</a></li>
-        <li className='NavLi'><a href='./Employment'>Employment</a></li>
-        <li className='NavLi'><a href='./Education'>Education</a></li>
-        <li className='NavLi'><a href='./Skills  '>Skills</a></li>
+        <li className='NavLi'><Link to='/Resume'>Resume</Link></li>
+        <li className='NavLi'><Link to='/Employment'>Employment</Link></li>
+        <li className='NavLi'><Link to='/Education'>Education</Link></li>
+        <li className='NavLi'><Link to='/Skills'>Skills</Link></li>
       </ul>
     </nav>
   )
