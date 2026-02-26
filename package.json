@@ -2,7 +2,7 @@
   "name": "first-app",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://pinak1392.github.io/React-Resume/",
+  "homepage": "https://pinak1392.github.io/React-Resume",
   "type": "module",
   "scripts": {
     "predeploy": "npm run build",
