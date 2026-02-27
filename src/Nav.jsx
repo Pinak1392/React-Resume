@@ -8,8 +8,8 @@ function Nav() {
       <ul>
         <li className='NavLi'><Link to='/Resume'>Resume</Link></li>
         <li className='NavLi'><Link to='/Employment'>Employment</Link></li>
-        <li className='NavLi'><Link to='/Education'>Education</Link></li>
-        <li className='NavLi'><Link to='/Skills'>Skills</Link></li>
+        {/* <li className='NavLi'><Link to='/Education'>Education</Link></li> */}
+        {/* <li className='NavLi'><Link to='/Skills'>Skills</Link></li> */}
       </ul>
     </nav>
   )
