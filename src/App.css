@@ -1,3 +1,9 @@
+:root {
+  --backgroundColor: #ABD2FA;
+  --backgroundInnerColor: #f8f8f8;
+  --navColor: #3D518C;
+}
+
 #root {
   text-align: center;
   width: 100%;
@@ -11,7 +17,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: radial-gradient(#e9ffe0 1px, #ABD2FA 1px);
+  background-image: radial-gradient(#e9ffe0 1px, var(--backgroundColor) 1px);
   background-size: 20px 20px;
   z-index: 0;
 }
@@ -22,7 +28,7 @@
   left: 5%;
   width: 90%;
   height: 100%;
-  background: white;
+  background: var(--backgroundInnerColor);
 }
 
 .bubble{
@@ -39,12 +45,18 @@
   background-color: #fce4c33a;
 }
 
+.segment{
+  background-color: #50ff55d2;
+  border-radius: 50%;
+  box-shadow: 0 0 10px #2b2424;
+}
+
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1% 5%;
-  background-color: #3D518C;
+  background-color: var(--navColor);
   color: whitesmoke;
   position: relative;
   z-index: 2;
@@ -205,7 +217,16 @@ a:active{
   text-align: justify;
 }
 
+.EducationContainer{
+  box-shadow: 0rem 0rem 0.3rem #3fd625;
+}
+
 @media (min-width: 800px){
+  #EducationTitle{
+    background-color: #282828;
+    color: whitesmoke;
+  }
+
   .employment > h2{
     font-size: 150%;
     margin-bottom: 0%;
