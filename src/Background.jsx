@@ -1,9 +1,9 @@
-import { useRef } from 'react';
+import { useRef, memo } from 'react';
 import Bubble from './Bubble';
 import popSound from './assets/bubblePop.mp3';
 import Snake from './Snake';
 
-export default function Background({preset}) {
+function Background({preset}) {
     const audioRef = useRef(new Audio(popSound));
     audioRef.current.volume = 0.2;
 
@@ -58,3 +58,5 @@ export default function Background({preset}) {
         </div>
     );
 }
+
+export default memo(Background);
