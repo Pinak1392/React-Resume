@@ -12,15 +12,12 @@ import Background from './Background';
 import Education from './Education';
 
 function App() {
+  const [theme, setTheme] = useState(2);
+
   return (
     <Router basename='/React-Resume'>
-      <Routes>
-        <Route path='' element={<Background preset={0} />}/>
-        <Route path='/Resume' element={<Background preset={0} />}/>
-        <Route path='/Employment' element={<Background preset={0} />}/>
-        <Route path='/Education' element={<Background preset={1} />}/>
-      </Routes>
-      < Nav />
+      <Background preset={theme}/>
+      < Nav theme={theme} setTheme={setTheme}/>
       <Routes>
         <Route path='' element={<Resume/>}/>
         <Route path='/Resume' element={<Resume/>}/>
