@@ -10,6 +10,7 @@ import Resume from './Resume';
 import Employment from './Employment';
 import Background from './Background';
 import Education from './Education';
+import Projects from './Projects';
 
 function App() {
   const [theme, setTheme] = useState(2);
@@ -23,6 +24,7 @@ function App() {
         <Route path='/Resume' element={<Resume/>}/>
         <Route path='/Employment' element={<Employment/>}/>
         <Route path='/Education' element={<Education/>}/>
+        <Route path='/Projects' element={<Projects/>}/>
       </Routes>
 
     </Router>

@@ -17,7 +17,7 @@ function Background({preset}) {
             baseAColor: '#299fff',
         },
         {
-            navColor: '#5cef68',
+            navColor: '#57dd62',
             backgroundColor: '#000000',
             backgroundInnerColor: '#282828',
             HeadingBackgroundColor: '#282828',

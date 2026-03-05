@@ -18,6 +18,7 @@ function Nav({ theme, setTheme }) {
         <li className='NavLi'><Link to='/Resume'>Resume</Link></li>
         <li className='NavLi'><Link to='/Employment'>Employment</Link></li>
         <li className='NavLi'><Link to='/Education'>Education</Link></li>
+        <li className='NavLi'><Link to='/Projects'>Projects</Link></li>
         {/* <li className='NavLi'><Link to='/Skills'>Skills</Link></li> */}
         <li className='NavLi' id='ThemeNav'><a onClick={() => {
           setModalActive(true);
